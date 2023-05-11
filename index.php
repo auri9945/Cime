@@ -26,15 +26,13 @@
 </head>
 <body>
     
-<h1>CIao siamo babbe </h1>
+
 <div class="container mt-5"> <!-- container con all'interno il pulsante che rimanda a create.php nella uqale viene creato il codice per inserire un nuovo post-->
     <div class="text-container"> 
         <a href="create.php" class="btn btn-outline-dark"> + Create a New Post</a> <!-- il tag a che fa da pulsante e coolagto alla pagina create.php-->
     </div>
 </div>
 
-<h1>CIao siamo babbe </h1>
-<h2>prova branch auri</h2>
-<h3>Salve<h3>
+
 </body>
 </html>
