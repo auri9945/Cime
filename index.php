@@ -26,6 +26,7 @@
 </head>
 <body>
     
+<h1>CIao </h1>
 <div class="container mt-5"> <!-- container con all'interno il pulsante che rimanda a create.php nella uqale viene creato il codice per inserire un nuovo post-->
     <div class="text-container"> 
         <a href="create.php" class="btn btn-outline-dark"> + Create a New Post</a> <!-- il tag a che fa da pulsante e coolagto alla pagina create.php-->
