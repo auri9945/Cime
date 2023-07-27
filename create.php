@@ -1,3 +1,7 @@
+<!--connection to db-->
+<?php
+include "logic.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,9 +30,9 @@
 <div class="container mt-5">
     <!--creazione di un form semplice-->
     <form method="POST">
-        <input type="text" placeholder="Blog Title" class="form-contol bg-dark texxt-white my-3 text-cemter">
-        <textarea class="form-control bg-dark text-white my-3"></textarea>
-        <button class="btn btn-dark">Add Post</button>
+        <input type="text" name="title" placeholder="Blog Title" class="form-contol bg-dark text-white my-3 text-center">
+        <textarea class="form-control bg-dark text-white my-3" name="content"></textarea>
+        <button class="btn btn-dark"name="new_post">Add Post</button>
     </form>
 </div>
 

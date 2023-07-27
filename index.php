@@ -1,5 +1,8 @@
-<!--connection to database-->
+<!--connection to db-->
 
+<?php
+    include "logic.php";
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,11 +29,44 @@
 </head>
 <body>
     
-
 <div class="container mt-5"> <!-- container con all'interno il pulsante che rimanda a create.php nella uqale viene creato il codice per inserire un nuovo post-->
+
+                <!--alert-->
+                <!-- gli stiamo dicendo che il tetso di avviso " Il tuo post è stato caricato correttamente!" 
+                può comparire solo nel caso in cui le info sono stato aggiunte al db-->
+            <?php
+            if(isset($_REQUEST['info']))
+            {?>
+                <?php 
+                if($_REQUEST['info'] == "added")
+                { ?>
+                <div class="alert alert-success" role="alert">
+                        Il tuo post è stato caricato correttamente!
+                </div>
+                <?php } ?>
+            <?php } ?>
+
     <div class="text-container"> 
         <a href="create.php" class="btn btn-outline-dark"> + Create a New Post</a> <!-- il tag a che fa da pulsante e coolagto alla pagina create.php-->
     </div>
+
+
+
+    <div class="row">
+
+        <?php foreach($query as $q) { ?>
+            <div class="col-4 d-flex justify-content-center align-items-center">
+                <div class="card text-white bg-dark mt-5">
+                    <div class="card-body" style="width: 18rem;">
+                        <h5 class="card-title"> <?php echo $q['title']; ?></h5>
+                        <p class="card-text">   <?php echo $q['content']; ?></p>
+                        <a href="" class="btn btn-light"> Read More <span class="text-danger">&rarr;</span></a>
+                    </div>
+                </div>
+            </div>
+        <?php }?>
+    </div>
+
 </div>
 
 
