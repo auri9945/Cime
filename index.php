@@ -80,7 +80,7 @@
                     <div class="card-body" style="width: 18rem;">
                         <h5 class="card-title"> <?php echo $q['title']; ?></h5>
                         <p class="card-text">   <?php echo $q['content']; ?></p>
-                        <a href="" class="btn btn-light"> Read More <span class="text-danger">&rarr;</span></a> <!--al posto del read more andrenno i rispettivi like e dislike--!
+                        <a href="" class="btn btn-light"> Read More <span class="text-danger">&rarr;</span></a> <!--al posto del read more andrenno i rispettivi like e dislike-->
                     </div>
                 </div>
             </div>
