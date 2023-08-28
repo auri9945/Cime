@@ -24,11 +24,15 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.3/bootbox.min.js" integrity="sha512-…" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!--CSS con le icone Font Awesome-->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-
+<!--Google Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Hompage</title>
 </head>
 <body>
-    
+   
+
 <div class="container mt-5"> <!-- container con all'interno il pulsante che rimanda a create.php nella uqale viene creato il codice per inserire un nuovo post-->
 
                 <!--alert-->
