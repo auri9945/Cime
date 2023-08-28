@@ -31,8 +31,7 @@
     <title>Hompage</title>
 </head>
 <body>
-   
-
+    
 <div class="container mt-5"> <!-- container con all'interno il pulsante che rimanda a create.php nella uqale viene creato il codice per inserire un nuovo post-->
 
                 <!--alert-->
@@ -50,8 +49,11 @@
                 <?php } ?>
             <?php } ?>
 
-    <div class="text-container"> 
-        <a href="create.php" class="btn btn-outline-dark"> + Create a New Post</a> <!-- il tag a che fa da pulsante e coolagto alla pagina create.php-->
+    <div class="text-container" style=" display:flex; align-items: center; justify-content:center;"> 
+        <h2>WELCOME TO CIME</h2>
+    </div>
+    <div class="create-post" style=" display:flex; align-items: center; justify-content:center;">
+    <a href="create.php" class="btn btn-outline-dark"> + Create a New Post</a> <!-- il tag a che fa da pulsante e coolagto alla pagina create.php-->
     </div>
 
 
@@ -64,7 +66,7 @@
                     <div class="card-body" style="width: 18rem;">
                         <h5 class="card-title"> <?php echo $q['title']; ?></h5>
                         <p class="card-text">   <?php echo $q['content']; ?></p>
-                        <a href="" class="btn btn-light"> Read More <span class="text-danger">&rarr;</span></a>
+                        <a href="" class="btn btn-light"> Read More <span class="text-danger">&rarr;</span></a> <!--al posto del read more andrenno i rispettivi like e dislike-->
                     </div>
                 </div>
             </div>
