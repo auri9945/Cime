@@ -28,11 +28,46 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <title>Hompage</title>
+    <title>Searchbar</title>
+<style>
+ 
+/*barra di navigazione orizzontale con colore di sfondo a larghezza intera*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  /*serve per dire dove spostare la barra*/
+  position: relative;
+  top: -190px;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active){
+  background-color: #111;
+}
+.active {
+  background-color: #04AA6D;
+}
+
+
+</style>
 </head>
 <body>
-    
-<div class="container mt-5"> <!-- container con all'interno il pulsante che rimanda a create.php nella uqale viene creato il codice per inserire un nuovo post-->
+    <div class="container mt-5"> <!-- container con all'interno il pulsante che rimanda a create.php nella quale viene creato il codice per inserire un nuovo post-->
 
                 <!--alert-->
                 <!-- gli stiamo dicendo che il tetso di avviso " Il tuo post è stato caricato correttamente!" 
@@ -75,6 +110,22 @@
 
 </div>
 
+<!--Creazione navbar e barra di ricerca-->
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#search">Search</a></li>
+  <form class="form-inline my-2 my-lg-0">
 
+  <!-- <button type="submit" class="button button--icon button--plain" style="z-index: 3">
+    <span class="is-icon-search icon icon-medium" style="color: var(--navigation-text-color)"></span>
+  </button> -->
+  
+    <input class="" style="width:50%;" type="search" placeholder="Cerca su CIME" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerca</button>
+  </form>
+</ul>
 </body>
 </html>
