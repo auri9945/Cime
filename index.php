@@ -36,33 +36,48 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <title>Hompage</title>
+    <title>Searchbar</title>
+<style>
+ 
+/*barra di navigazione orizzontale con colore di sfondo a larghezza intera*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  /*serve per dire dove spostare la barra*/
+  position: relative;
+  top: -190px;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active){
+  background-color: #111;
+}
+.active {
+  background-color: #04AA6D;
+}
+
+
+</style>
 </head>
 
 
 
 <body>
-    <header> <!--creazione contenitore header con all'interno la navbar - barra di navogazione-->
-        <div class="header">
-            <nav class="navbar navbar-dark bg-dark justify-content-between">
-                <div class="container">
-                    <a href="index.php"> <img src="" alt="" class="logo"> CIME</a> <!-- logo con collegamento ipertestuale con la pagina index.php-->
-                    <div class="nav_items">
-                        <ul>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">About us</a></li>
-                            <li><a href="">Contacts</a></li>
-                        </ul>
-                    </div>
-                    <div class="nav_login">
-                        <a href="" class="btn btn-light">Login</a> <!-- collegamento ipertestuale con il sistema di login-->
-                        <a href="" style="color:white;">register</a> <!-- collegamento ipertestuale con il sistema di registrazione-->
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-    
-<div class="container mt-5"> <!-- container con all'interno il pulsante che rimanda a create.php nella uqale viene creato il codice per inserire un nuovo post-->
+    <div class="container mt-5"> <!-- container con all'interno il pulsante che rimanda a create.php nella quale viene creato il codice per inserire un nuovo post-->
 
                 <!--alert-->
                 <!-- gli stiamo dicendo che il tetso di avviso " Il tuo post è stato caricato correttamente!" 
@@ -126,6 +141,22 @@
 
 </div>
 
+<!--Creazione navbar e barra di ricerca-->
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#search">Search</a></li>
+  <form class="form-inline my-2 my-lg-0">
 
+  <!-- <button type="submit" class="button button--icon button--plain" style="z-index: 3">
+    <span class="is-icon-search icon icon-medium" style="color: var(--navigation-text-color)"></span>
+  </button> -->
+  
+    <input class="" style="width:50%;" type="search" placeholder="Cerca su CIME" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerca</button>
+  </form>
+</ul>
 </body>
 </html>
