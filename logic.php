@@ -44,5 +44,21 @@ if(isset($_REQUEST["new_post"])) //determiniamo se una variabile è dischiarato 
 
 
 
+// colore delle card-body
 
+?>
+
+
+<?php
+session_start();
+$msg = "";
+// leggo il parametro c della request - controllando prima che non sia null attraverlo la funzione isset - vado ad inizializzare la variabile di sessine "color" e imposto il messaggio $msg. 
+if (isset($_GET["c"])) {
+$_SESSION["colore"] = $_GET["card-title"];
+$msg = "Colore ".$_SESSION["colore"]." ricevuto e salvato in una
+variabile di sessione.";
+} else {
+$msg = "Non ho ricevuto il colore...";
+}
+echo $msg;
 ?>
